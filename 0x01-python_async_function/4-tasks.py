@@ -18,7 +18,6 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     ls = []
     for i in range(n):
-        num = await task_wait_random(max_delay)
-        ls.append(num)
+        ls.append(await task_wait_random(max_delay))
 
     return ls
