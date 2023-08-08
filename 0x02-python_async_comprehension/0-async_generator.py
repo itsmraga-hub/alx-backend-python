@@ -8,10 +8,10 @@
 """
 import asyncio
 import random
-from typing import Generator
+from typing import List
 
 
-async def async_generator() -> Generator[float]:
+async def async_generator():
     """
         coroutine looping 10 times generating random numbers each time
     """
