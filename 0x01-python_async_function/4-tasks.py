@@ -20,4 +20,4 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     for i in range(n):
         ls.append(await task_wait_random(max_delay))
 
-    return ls
+    return sorted(ls)
